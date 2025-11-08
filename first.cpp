@@ -22,7 +22,7 @@ public:
     vector<int> minToMaxHeap(vector<int> nums) {
         int n = nums.size();
 
-        for (int i = n / 2 - 1; i >= 0; i--) {   // ✅ fixed (added int)
+        for (int i = n / 2 - 1; i >= 0; i--) {  
             heapify(nums, n, i);
         }
 
